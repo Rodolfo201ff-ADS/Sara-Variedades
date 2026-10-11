@@ -378,13 +378,15 @@
 
             mensagem += `%0A📦 *Entrega:* ${bairroName} (R$ ${tax.toFixed(2)})`;
             mensagem += `%0A💰 *Total a Pagar:* *R$ ${total.toFixed(2)}*%0A`;
-            mensagem += `💳 *Chave Pix CNPJ:* 22054201000295%0A`;
+            
+            // CHAVE PIX DE TESTE ATUALIZADA:
+            mensagem += `💳 *Chave Pix:* 42913373291%0A`;
 
             if (hasLowStockAlert) {
                 mensagem += `%0A⚠️ *ALERTA DE ESTOQUE BAIXO!* Um ou mais itens atingiram nível crítico (<= 5 unidades).`;
             }
 
-            // AQUI ESTÁ O SEU NÚMERO DE TESTE CORRETO:
+            // SEU NÚMERO DE TESTE:
             const telefoneLoja = "5591993270158";
             
             cart = [];
